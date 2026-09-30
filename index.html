@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Time Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>📚 My Time Table</h1>
+    <p class="subtitle">Weekly Class Schedule</p>
+
+    <div class="form">
+      <input type="text" id="subject" placeholder="Subject">
+
+      <select id="day">
+        <option value="">Select Day</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+      </select>
+
+      <input type="time" id="time">
+
+      <button onclick="addClass()">Add Class</button>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+        </thead>
+
+        <tbody id="timetable">
+        </tbody>
+      </table>
+    </div>
+
+    <button class="clear-btn" onclick="clearTable()">
+      Clear All
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
